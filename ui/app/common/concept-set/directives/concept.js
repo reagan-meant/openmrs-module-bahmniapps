@@ -87,11 +87,11 @@ angular.module('bahmni.common.conceptSet')
                         var namesMap = observation.concept.names;
                         namesMap.forEach(function (names) {
                             if (names.locale === currentLocale) {
-                                observation.concept.name = names.display;
+                                localName = names.display;
                             }
                         });
                     }
-                    return observation.concept.name;
+                    return localName;
                 };
             };
 
